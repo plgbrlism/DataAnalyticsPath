@@ -1,0 +1,37 @@
+KC House Data Storytelling
+Key Insights for the King County Housing Market
+1. What are the top 3 drivers of high house prices?
+The top three drivers of high house prices are attributes related to quality, size, and neighborhood density.
+
+Rank	Driver	Correlation (ρ)	Insight
+1	Grade	0.706	The quality of construction, design, and finish is the single best predictor of price. Moving from an average house (Grade 7) to a high-quality house (Grade 8+) results in the most significant price increase.
+2	Sqft Living	0.701	The size of the interior living space has an almost equally strong linear relationship with price. Larger homes simply cost more.
+3	Sqft Living 15	0.630	This represents the average size of the 15 nearest homes. Its strong correlation indicates that a house's value is heavily supported by the quality and size of the surrounding properties.
+
+Export to Sheets
+2. Where are the most expensive zip codes to buy, and why?
+The most expensive areas are concentrated along the north-eastern shores of Lake Washington.
+
+Location: The Latitude of the property has a moderate positive correlation (ρ=0.40).
+
+Hotspots: The geospatial plot clearly shows the highest-priced clusters (yellow points) concentrated around the Latitude 47.6 to 47.7 and Longitude -122.2 region. This generally corresponds to affluent areas like Bellevue, Kirkland, and Mercer Island.
+
+Why: These price hotspots are driven by factors not included in the data (e.g., school district quality, proximity to tech hubs, views, and exclusive waterfront access), which are quantified by the high value of the surrounding properties (sqft_living15).
+
+3. Does renovation significantly impact price?
+No, not significantly on its own.
+
+The correlation for Years_Since_Renovation is very weak and negative (ρ=−0.117).
+
+Interpretation: While a recent renovation might add value, its impact is largely absorbed and masked by the more dominant factors like Grade and Location. The data suggests that a high-grade house in a prime location that has never been renovated often sells for far more than a recently renovated low-grade house in a less desirable area.
+
+Advice: Renovation is likely necessary to maintain a house's Grade and condition, but it is not a primary price driver in the way Grade or size are.
+
+4. How has the market changed over the period?
+The market showed moderate price appreciation and clear seasonality during the 2014–2015 period.
+
+Trend: Average house prices showed a moderate upward trend over the study period.
+
+Peak Season: Prices clearly dipped slightly in late 2014 (winter months) and then experienced a significant surge beginning in early 2015, peaking around May/June 2015.
+
+Advice: For sellers, the data suggests that listing a property during the late spring/early summer months maximizes potential sales price due to peak market demand.
